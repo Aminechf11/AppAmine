@@ -7,8 +7,7 @@ Ce site web a été créé pour permettre aux utilisateurs de gérer des maillot
     Créer
     Modifier
     Supprimer
-
-des maillots de football.
+    des maillots de football.
 
 Les utilisateurs peuvent également :
 
@@ -16,8 +15,8 @@ Les utilisateurs peuvent également :
     Se connecter à ce compte
     Consulter leurs informations personnelles
     Naviguer facilement grâce à une Navbar intuitive
+    Un bouton Logout permet de se déconnecter rapidement et de revenir à la page d'accueil.
 
-Un bouton Logout permet de se déconnecter rapidement et de revenir à la page d'accueil.
 Fonctionnalités
 
     Créer un compte utilisateur
@@ -45,20 +44,21 @@ Technologies utilisées
     Node.js : Back-end avec API RESTful.
     MongoDB : Base de données robuste et flexible.
 
-Complications/Défauts
-Problème avec le token
+Complications/Défauts :
+
+-Problème avec le token
 
     Le token fonctionne correctement pour des actions comme login et get, mais des erreurs apparaissent pour certaines actions comme update.
     Les fonctions ont dû être adaptées pour contourner ce problème.
 
-Problèmes au niveau des utilisateurs
+-Problèmes au niveau des utilisateurs
 
-    Backend : Les fonctions update et delete fonctionnent correctement via Postman.
+    Backend : Les fonctions fonctionnent correctement via Postman.
     Frontend : Ces mêmes fonctions ne s'exécutent pas correctement, bien que get, create, et login fonctionnent.
 
-Problèmes au niveau des maillots
+-Problèmes au niveau des maillots
 
-    Backend : Les fonctions get et create sont opérationnelles via Postman.
+    Backend : Les fonctions get et update sont opérationnelles via Postman.
     Frontend : Seule la fonction get fonctionne correctement, tandis que update et delete échouent à établir un lien.
 
 Avenir et Améliorations
