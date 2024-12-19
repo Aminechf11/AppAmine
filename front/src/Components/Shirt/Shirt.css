@@ -1,0 +1,114 @@
+/* Shirt.css */
+
+/* Ajout d'une marge pour éviter que le contenu chevauche la Navbar */
+body {
+    margin-top: 70px; /* S'assurer que le contenu commence en dessous de la navbar */
+}
+
+/* Style général du conteneur Shirt */
+.shirt-container {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Titre de la page */
+.shirt-container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Liste des maillots */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Style pour le formulaire de création de maillot */
+form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Champ du formulaire */
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Bouton de soumission */
+form button {
+    background-color: #66a6ff;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Bouton au survol */
+form button:hover {
+    background-color: #55aaff;
+}
+
+/* Message de chargement et erreur */
+.loading, .error {
+    font-size: 1.2rem;
+    color: #d9534f;
+    margin-top: 20px;
+}
+
+/* Pour chaque maillot dans la liste */
+ul li {
+    font-size: 1.1rem;
+    padding: 10px;
+    background-color: #fafafa;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Pour chaque maillot, en survol */
+ul li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsiveness pour les petits écrans */
+@media screen and (max-width: 768px) {
+    .shirt-container h1 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    form input {
+        font-size: 0.9rem;
+    }
+
+    form button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

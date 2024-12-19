@@ -1,0 +1,74 @@
+/* Navbar.css */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #89f7fe, #89f7fe);
+    box-shadow: 0 4px 6px rgba(126, 89, 205, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white; /* Maintient le texte en blanc */
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffd700; /* Couleur dorée au survol pour rendre les liens plus visibles */
+}
+
+.navbar button {
+    background-color: white;
+    color: #66a6ff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 1px solid #66a6ff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar button:hover {
+    background-color: #66a6ff;
+    color: white; /* Changer la couleur du texte au survol pour plus de contraste */
+}
+
+/* Ajout d'un fond léger sur les liens pour les rendre plus visibles */
+.navbar a {
+    background-color: rgba(0, 0, 0, 0.2); /* Ajouter un fond légèrement transparent */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: rgba(0, 0, 0, 0.4); /* Fond plus foncé au survol */
+    color: #fff; /* Maintenir le texte en blanc lors du survol */
+}
+
+/* Margin for the page content to avoid overlap with fixed navbar */
+body {
+    margin-top: 70px;
+}
